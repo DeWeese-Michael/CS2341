@@ -38,7 +38,9 @@ int main()
      * C++11 lets us initialize vectors like this
      */
     cout << "\nSTL vectors" << "\n";
+    //vector<int> squares;
     vector<int> squares = {1, 4, 9, 16, 25};
+
     cout << "size: " << squares.size() << "\n"
          << "capacity:" << squares.capacity() << "\n\n";
 
@@ -112,6 +114,7 @@ int main()
     char *cstr = new char[a.length() + 1];
     strcpy(cstr, a.c_str());
     cout << "As cstring: " << cstr << endl;
+    delete[] cstr;
 
     return 0;
 }
